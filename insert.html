@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+</head>
+<body>
+    <form action="/cgi-bin/formins.py">
+        <br>
+		Дата
+        <input type="date" name="dt">
+        <br>	
+        <br>			
+		Категория
+		<select name="frcat">
+			<option label="Продукты" value="1"></option>
+			<option label="ХозБыт" value="2"></option>
+			<option label="Другое" value="3"></option>
+			<option label="Алкоголь/табак" value="4"></option>
+			<option label="Транспорт" value="5"></option>
+		</select>
+        <br>	
+        <br>	
+        Название&nbsp&nbsp <input type="text" name="frnote">
+        <br>	
+        <br>	
+        Кол-во&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" name="framount">
+        <br>	
+        <br>	
+        Цена&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" name="frprice">
+        <br>	
+        <br>	
+        <input type="submit">
+        <br>	
+        <br>			
+    </form>
+    <form action="/cgi-bin/openper.py">
+        <input type="submit" value="Новый период"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Сумма <input type="text" name="frsumm">
+        <br>	
+        <br>
+    </form>
+</body>
+</html>
